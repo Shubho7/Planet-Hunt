@@ -33,15 +33,15 @@ with col2:
 st.markdown("""
     <style>
     div.stButton > button:first-child {
-        background-color: #4CAF50;
+        background-color: #1F04FF;
         color:#ffffff;
-        border-radius:10px;
+        border-radius:15px;
         height:50px;
         width:200px;
-        font-size:18px;
+        font-size:10px;
     }
     div.stButton > button:first-child:hover {
-        background-color: #45a049;
+        background-color: #001198;
         color:#ffffff;
     }
     </style>""", unsafe_allow_html=True)
