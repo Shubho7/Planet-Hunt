@@ -28,7 +28,7 @@ P_DENSITY = st.number_input('Density (P_DENSITY)', value=1.0)
 if st.button('Predict'):
     # Input data from user
     input_data = np.array([[P_MASS, P_RADIUS, P_PERIOD, P_SEMI_MAJOR_AXIS, P_ECCENTRICITY, 
-                            P_INCLINATION, P_ESCAPE, P_POTENTIAL, P_GRAVITY, P_DENSITY]])
+                            P_INCLINATION, P_ESCAPE, P_POTENTIAL]])
 
     # Scaling the input data
     input_data_scaled = scaler.transform(input_data)
