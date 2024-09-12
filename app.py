@@ -33,12 +33,12 @@ with col2:
 st.markdown("""
     <style>
     div.stButton > button:first-child {
-        background-color: #1F04FF;
+        background-color:#1F04FF;
         color:#ffffff;
-        border-radius:15px;
-        height:50px;
-        width:200px;
-        font-size:10px;
+        border-radius:10px;
+        font-size:100px;
+        padding:10px;
+        width:100%;
     }
     div.stButton > button:first-child:hover {
         background-color: #001198;
@@ -47,7 +47,8 @@ st.markdown("""
     </style>""", unsafe_allow_html=True)
 
 # When the user clicks the Predict button
-if st.button('Predict'):
+if st.button('PREDICT'):
+
     # Input data from user
     input_data = np.array([[P_MASS, P_RADIUS, P_PERIOD, P_SEMI_MAJOR_AXIS, P_ECCENTRICITY, 
                             P_INCLINATION, P_ESCAPE, P_POTENTIAL]])
@@ -58,10 +59,25 @@ if st.button('Predict'):
     # Predicting using the model
     prediction = np.argmax(model.predict(input_data_scaled), axis=1)[0]
 
-    # Mapping prediction to the actual class
+    # Displaying the prediction
     if prediction == 0:
-        st.success('The planet is Uninhabitable.')
+        # Uninhabitable - Red background
+        st.markdown(f"""
+            <div style="background-color:#f44336;padding-left:10px;padding-top:12px;border-radius:10px;display:inline-block;">
+            <h5 style="color:white;text-align:left;">The planet is Uninhabitable</h5>
+            </div>
+        """, unsafe_allow_html=True)
     elif prediction == 1:
-        st.success('The planet is Conservatively Habitable.')
+        # Conservatively Habitable - Green background
+        st.markdown(f"""
+            <div style="background-color:#00D032;padding-left:10px;padding-top:12px;border-radius:10px;display:inline-block;">
+            <h5 style="color:white;text-align:left;">The planet is Conservatively Habitable</h5>
+            </div>
+        """, unsafe_allow_html=True)
     else:
-        st.success('The planet is Optimistically Habitable.')
+        # Optimistically Habitable - Yellow background
+        st.markdown(f"""
+            <div style="background-color:#FFAF0B;padding-left:10px;padding-top:12px;border-radius:10px;display:inline-block;">
+            <h5 style="color:black;text-align:left;">The planet is Optimistically Habitable</h5>
+            </div>
+        """, unsafe_allow_html=True)
