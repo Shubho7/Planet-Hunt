@@ -25,7 +25,7 @@ st.markdown("""
             color:#ffffff; 
             text-align: justify;">
             Welcome to <b>Planet Hunt</b>🪐✨ an exoplanet habitability predictor<br>
-            Imagine looking up at the night sky and knowing that out there, beyond the twinkling stars, lie countless hidden worlds—planets with wild landscapes, alien weather, and maybe, just maybe, the right ingredients for life. These are Exoplanets, and we’re on a mission to uncover their secrets. Some may be scorching hot giants, others frozen, but a few could be habitable oases in the vast cosmic desert drifting in the vast emptiness of space. Every time we spot a new exoplanet, it feels like opening a door to a new sci-fi story. Some could be potential homes for life, with alien sunsets we can only dream of. Who knows, the next big discovery might just reveal a second Earth?, or a world so strange it redefines our imagination. Let’s find out together!
+            Imagine looking up at the night sky and knowing that out there beyond the twinkling stars, lie countless hidden worlds—planets with wild landscapes, alien weather, and maybe, just maybe, the right ingredients for life. These are Exoplanets, and we’re on a mission to uncover their secrets. Some may be scorching hot giants, others frozen, but a few could be habitable oases in the vast cosmic desert drifting in the vast emptiness of space. Whenever we spot a new exoplanet, it feels like opening a door to a new sci-fi story. Some could be potential homes for life, with alien sunsets we can only dream of. Who knows, the next big discovery might just reveal a second Earth?, or a world so strange it redefines our imagination. Let’s find out together!
         </p>
     </div>
 """, unsafe_allow_html=True)
