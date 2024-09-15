@@ -3,6 +3,8 @@ import numpy as np
 import tensorflow as tf
 from sklearn.preprocessing import StandardScaler
 import joblib  
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Load the trained model and the scaler
 model = tf.keras.models.load_model('C:/Users/baner/Documents/Planet-Hunt/notebooks/trained_model.h5')  
@@ -20,7 +22,7 @@ st.markdown("""
 # Description
 st.markdown("""
     <div style="padding:15px;">
-        <p style="font-style: Arial; 
+        <p style="font-style: Verdana; 
             font-size:18px; 
             color:#ffffff; 
             text-align: justify;">
@@ -114,3 +116,42 @@ if st.button('PREDICT'):
                 Keep going! you might have found a <b>Optimistically Habitable Planet</b></h5>
             </div>
         """, unsafe_allow_html=True)
+
+
+st.markdown("""
+    <h2 style="text-align: left; 
+            padding-top: 100px;
+            color: white;">
+            <b>Planetary Detection Methods</b></h2>
+""", unsafe_allow_html=True)
+
+# Load the dataset
+df = pd.read_excel("C:/Users/baner/Documents/Planet-Hunt/data/Study_of_exoplanets.xlsx")
+detection_habitat_counts = df.groupby(['P_DETECTION', 'P_HABITABLE']).size().unstack(fill_value=0)
+
+# Plot for uninhabitable planets
+fig1, ax1 = plt.subplots(figsize=(10, 2))
+detection_habitat_counts[0].sort_values(ascending=False).plot(kind='bar', ax=ax1, color='r', alpha=0.7)
+ax1.set_title('Uninhabitable Planets')
+ax1.set_ylabel('Count')
+ax1.set_xlabel('Detection Method')
+ax1.set_yscale("log")
+st.pyplot(fig1)
+
+# Plot for conservatively habitable planets
+fig2, ax2 = plt.subplots(figsize=(10, 2))
+detection_habitat_counts[1].sort_values(ascending=False).plot(kind='bar', ax=ax2, color='g', alpha=0.7)
+ax2.set_title('Conservatively Habitable Planets')
+ax2.set_ylabel('Count')
+ax2.set_xlabel('Detection Method')
+ax2.set_yscale("log")
+st.pyplot(fig2)
+
+# Plot for optimistically habitable planets
+fig3, ax3 = plt.subplots(figsize=(10, 2))
+detection_habitat_counts[2].sort_values(ascending=False).plot(kind='bar', ax=ax3, color='y', alpha=0.7)
+ax3.set_title('Optimistically Habitable Planets')
+ax3.set_ylabel('Count')
+ax3.set_xlabel('Detection Method')
+ax3.set_yscale("log")
+st.pyplot(fig3)
