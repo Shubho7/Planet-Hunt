@@ -38,14 +38,12 @@ with col1:
     P_MASS = st.number_input('Mass of the planet')
     P_RADIUS = st.number_input('Planetary Radius of the planet')
     P_PERIOD = st.number_input('Orbital Period of the planet')
-    P_SEMI_MAJOR_AXIS = st.number_input('Semi-major Axis of the planet')
 
 # Column 2 input fields
 with col2:
-   P_ECCENTRICITY = st.number_input('Orbital Eccentricity of the planet')
-   P_INCLINATION = st.number_input('Orbital Inclination of the planet')
-   P_ESCAPE = st.number_input('Escape Velocity of the planet')
-   P_POTENTIAL = st.number_input('Gravitational Potential of the planet')
+   P_SEMI_MAJOR_AXIS = st.number_input('Semi-major Axis of the planet')
+   P_TEMP_EQUIL = st.number_input('Equilibrium Temperature of the planet')
+   S_LUMINOSITY = st.number_input('Luminosity of the star')
 
 # Styling the button using st.markdown and HTML
 st.markdown("""
