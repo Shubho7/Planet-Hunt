@@ -4,13 +4,13 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler
 import joblib  
 
-# Load the trained model
+# Load the trained model and the scaler
 model = tf.keras.models.load_model('C:/Users/baner/Documents/Planet-Hunt/notebooks/trained_model.h5')  
 
 scaler = joblib.load('C:/Users/baner/Documents/Planet-Hunt/notebooks/scaler.pkl') 
 
 # Streamlit app UI
-# Tile
+# Title
 st.markdown("""
     <h2 style="text-align: center; 
             color: white;">
