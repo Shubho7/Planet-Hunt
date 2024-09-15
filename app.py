@@ -66,7 +66,7 @@ st.markdown("""
 if st.button('PREDICT'):
 
     # Input data from user
-    input_data = np.array([['P_MASS', 'P_RADIUS', 'P_PERIOD', 'P_SEMI_MAJOR_AXIS', 'P_TEMP_EQUIL', 'S_LUMINOSITY']])
+    input_data = np.array([[P_MASS, P_RADIUS, P_PERIOD, P_SEMI_MAJOR_AXIS, P_TEMP_EQUIL, S_LUMINOSITY]])
 
     # Scaling the input data
     input_data_scaled = scaler.transform(input_data)
