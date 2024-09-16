@@ -124,7 +124,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load the dataset
-df = pd.read_excel("C:/Users/baner/Documents/Planet-Hunt/data/Study_of_exoplanets.xlsx")
+df = pd.read_excel("data/Study_of_exoplanets.xlsx")
 detection_habitat_counts = df.groupby(['P_DETECTION', 'P_HABITABLE']).size().unstack(fill_value=0)
 
 # Plot for uninhabitable planets
