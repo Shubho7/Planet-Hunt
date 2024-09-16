@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Load the trained model and the scaler
-model = tf.keras.models.load_model('C:/Users/baner/Documents/Planet-Hunt/notebooks/trained_model.h5')  
-scaler = joblib.load('C:/Users/baner/Documents/Planet-Hunt/notebooks/scaler.pkl') 
+model = tf.keras.models.load_model('trained_model.h5')  
+scaler = joblib.load('scaler.pkl') 
 
 # Streamlit app UI
 # Title
