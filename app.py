@@ -1,14 +1,12 @@
 import streamlit as st
 import numpy as np
 import tensorflow as tf
-from sklearn.preprocessing import StandardScaler
 import joblib  
 import matplotlib.pyplot as plt
 import pandas as pd
 
 # Load the trained model and the scaler
 model = tf.keras.models.load_model('C:/Users/baner/Documents/Planet-Hunt/notebooks/trained_model.h5')  
-
 scaler = joblib.load('C:/Users/baner/Documents/Planet-Hunt/notebooks/scaler.pkl') 
 
 # Streamlit app UI
@@ -16,7 +14,7 @@ scaler = joblib.load('C:/Users/baner/Documents/Planet-Hunt/notebooks/scaler.pkl'
 st.markdown("""
     <h2 style="text-align: center; 
             color: white;">
-            <b>PLANET HUNT</b></h2>
+            <b>PLANET HUNT 🪐🚀</b></h2>
 """, unsafe_allow_html=True)
 
 # Description
@@ -26,7 +24,7 @@ st.markdown("""
             font-size:18px; 
             color:#ffffff; 
             text-align: justify;">
-            Welcome to <b>Planet Hunt</b>🪐✨ an exoplanet habitability predictor<br>
+            Welcome to <b>Planet Hunt</b>, an exoplanet habitability predictor.<br>
             Imagine looking up at the night sky and knowing that out there beyond the twinkling stars, lie countless hidden worlds—planets with wild landscapes, alien weather, and maybe, just maybe, the right ingredients for life. These are Exoplanets, and we’re on a mission to uncover their secrets. Some may be scorching hot giants, others frozen, but a few could be habitable oases in the vast cosmic desert drifting in the vast emptiness of space. Whenever we spot a new exoplanet, it feels like opening a door to a new sci-fi story. Some could be potential homes for life, with alien sunsets we can only dream of. Who knows, the next big discovery might just reveal a second Earth?, or a world so strange it redefines our imagination. Let’s find out together!
         </p>
     </div>
