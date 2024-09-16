@@ -5,6 +5,7 @@ import joblib
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 # Load the trained model and the scaler
 model = tf.keras.models.load_model('notebooks/trained_model.h5')  
 scaler = joblib.load('notebooks/scaler.pkl') 
