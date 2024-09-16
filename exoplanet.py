@@ -1,12 +1,12 @@
 import streamlit as st
 import numpy as np
-import tensorflow as tf
 import joblib  
 import matplotlib.pyplot as plt
 import pandas as pd
+from tensorflow.keras.models import load_model
 
 # Load the trained model and the scaler
-model = tf.keras.models.load_model('C:/Users/baner/Documents/Planet-Hunt/notebooks/trained_model.h5')  
+model = load_model('C:/Users/baner/Documents/Planet-Hunt/notebooks/trained_model.h5')  
 scaler = joblib.load('C:/Users/baner/Documents/Planet-Hunt/notebooks/scaler.pkl') 
 
 # Streamlit app UI
