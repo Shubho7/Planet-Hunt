@@ -1,5 +1,7 @@
 <h2>PLANET HUNT: An Exoplanet Habitability Predictor</h2>
-Planet Hunt is developed using deep learning concepts where the core model leverages a Feed-Forward Neural Network (FFNN) architecture to classify exoplanetary data and assess the potential habitability of planets outside our solar system. With an accuracy of 99.01%, this tool offers a robust solution for researchers and enthusiasts interested in the search for habitable planets.
+Planet Hunt is developed using deep learning concepts where the core model leverages a Feed-Forward Neural Network (FFNN) architecture to classify exoplanetary data and assess the potential habitability of planets outside our solar system. With an accuracy of 99.14%, this tool offers a robust solution for researchers and enthusiasts interested in the search for habitable planets.
+
+<img src="images/UI.png" alt="UI" style="width:600px;height:450px;">
 
 <h4>Model Overview</h4>
 The Planet Hunt model is built atop a multilayer perceptron (MLP), enhanced with four additional layers to optimize performance. Through extensive hyperparameter optimization and fine-tuning, this architecture is designed to perform highly accurate predictions. The key challenge in the development of this model was to handle the imbalanced distribution of habitable versus uninhabitable planets, which we tackled with several advanced techniques.
@@ -10,7 +12,7 @@ The Planet Hunt model is built atop a multilayer perceptron (MLP), enhanced with
 <li><b>Model Training:</b> The final model was trained using this processed and balanced dataset. The additional layers introduced in the MLP allow for deeper learning, enabling the model to capture complex relationships between the input features and their impact on habitability. The final result is an accuracy rate of 99.01%, a testament to the precision of the model.</li><br>
 </ul>
 
-
+<img src="images/Confusion matrix.png" alt="Confusion Matrix" style="width:600px;height:450px;">
 
 <h4>How Planet Hunt Works</h4>
 Planet Hunt works by accepting relevant planetary data from the user, which can include various planetary attributes such as mass, radius, orbital period, temperature, and star information. Based on this input, within moments the model delivers a clear, easy-to-interpret result on the habitability of the planet in one of three categories:
