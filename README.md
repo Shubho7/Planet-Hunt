@@ -10,6 +10,8 @@ The Planet Hunt model is built atop a multilayer perceptron (MLP), enhanced with
 <li><b>Model Training:</b> The final model was trained using this processed and balanced dataset. The additional layers introduced in the MLP allow for deeper learning, enabling the model to capture complex relationships between the input features and their impact on habitability. The final result is an accuracy rate of 99.01%, a testament to the precision of the model.</li><br>
 </ul>
 
+
+
 <h4>How Planet Hunt Works</h4>
 Planet Hunt works by accepting relevant planetary data from the user, which can include various planetary attributes such as mass, radius, orbital period, temperature, and star information. Based on this input, within moments the model delivers a clear, easy-to-interpret result on the habitability of the planet in one of three categories:
 <ul><br>
