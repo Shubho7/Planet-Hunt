@@ -1,5 +1,5 @@
-<h2 style="align: center">PLANET HUNT: An Exoplanet Habitability Predictor</h2>
-Planet Hunt is developed using deep learning concepts where the core model leverages a Feed-Forward Neural Network (FFNN) architecture to classify exoplanetary data and assess the potential habitability of planets outside our solar system. With an accuracy of 99.14%, this tool offers a robust solution for researchers and enthusiasts interested in the search for habitable planets.
+<h2 align="center">PLANET HUNT: An Exoplanet Habitability Predictor</h2>
+<a href="aperture.streamlit.app">PLANET HUNT</a> is developed using deep learning concepts where the core model leverages a Feed-Forward Neural Network (FFNN) architecture to classify exoplanetary data and assess the potential habitability of planets outside our solar system. With an accuracy of 99.14%, this tool offers a robust solution for researchers and enthusiasts interested in the search for habitable planets.
 
 <img src="images/UI.png" alt="UI" style="width:600px;height:450px;">
 
@@ -22,5 +22,6 @@ Planet Hunt works by accepting relevant planetary data from the user, which can 
 <li><b>Optimistically Habitable:</b> The planet has a higher potential for habitability, considering more flexible criteria.</li><br>
 </ul>
 
-Ready to discover the next Earth? Dive into the cosmos with Planet Hunt and uncover habitable worlds waiting to be explored! Whether you're a researcher or simply just curious about the potential for life on distant worlds, visit <a href="aperture.streamlit.app">PLANET HUNT</a> now and have fun predicting the future of exoplanet exploration.<br>
-The universe is vast—start your hunt today!
+Ready to discover the next Earth? Dive into the cosmos with Planet Hunt and uncover habitable worlds waiting to be explored! Whether you're a researcher or simply just curious about the potential for life on distant worlds.<br>
+Visit <a href="aperture.streamlit.app">PLANET HUNT</a> now and have fun predicting the future of exoplanet exploration.
+The universe is vast — start your hunt today!
