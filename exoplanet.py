@@ -99,7 +99,7 @@ if st.button('PREDICT'):
                 display:inline-block;">
                 <h5 style="color:white;
                 text-align:left;">
-                Whoa! you might have just found a <b>Conservatively Habitable Planet</b></h5>
+                Whoa! you might have found a <b>Conservatively Habitable Planet</b></h5>
             </div>
         """, unsafe_allow_html=True)
     else:
