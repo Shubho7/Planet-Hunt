@@ -1,4 +1,4 @@
-<h2>PLANET HUNT: An Exoplanet Habitability Predictor</h2>
+<h2 style="justify-content: center;">PLANET HUNT: An Exoplanet Habitability Predictor</h2>
 Planet Hunt is developed using deep learning concepts where the core model leverages a Feed-Forward Neural Network (FFNN) architecture to classify exoplanetary data and assess the potential habitability of planets outside our solar system. With an accuracy of 99.14%, this tool offers a robust solution for researchers and enthusiasts interested in the search for habitable planets.
 
 <img src="images/UI.png" alt="UI" style="width:600px;height:450px;">
